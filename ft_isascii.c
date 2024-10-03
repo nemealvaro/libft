@@ -1,34 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/17 18:39:47 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/02 01:28:45 by aneme            ###   ########.fr       */
+/*   Created: 2024/09/18 17:34:24 by aneme             #+#    #+#             */
+/*   Updated: 2024/10/02 01:40:26 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+int	ft_isascii(int c)
 {
-	int	i;
-
-	i = 0;
-	while (s[i] != 0)
+	if (c >= 0 && c <= 127)
 	{
-		i++;
+		return (1);
 	}
-	return (i);
+	else
+	{
+		return (0);
+	}
 }
-/*/
+
 int	main(void)
 {
-	char	string[] = {"four horsemen"};
-	size_t i =	ft_strlen(string);
-	printf("el numero de caracteres es: %ld\n", i);
+	char	c;
+
+	c = '-';
+	if (ft_isascii(c))
+	{
+		printf("%c es un caracter ascii.\n", c);
+	}
+	else
+	{
+		printf("%c no es un caracter ascii.\n", c);
+	}
 	return (0);
 }
-*/

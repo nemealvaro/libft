@@ -1,34 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/17 18:39:47 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/02 01:28:45 by aneme            ###   ########.fr       */
+/*   Created: 2024/09/23 22:13:08 by aneme             #+#    #+#             */
+/*   Updated: 2024/10/02 01:44:19 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	int	i;
+	size_t	i;
+	size_t	srclen;
 
 	i = 0;
-	while (s[i] != 0)
+	srclen = 0;
+	while (src[srclen] != '\0')
 	{
-		i++;
+		srclen++;
 	}
-	return (i);
+	if (dstsize > 0)
+	{
+		while (i < dstsize - 1 && src[i] != '\0')
+		{
+			dst[i] = src[i];
+			i++;
+		}
+		dst[i] = '\0';
+	}
+	return (srclen);
 }
-/*/
-int	main(void)
-{
-	char	string[] = {"four horsemen"};
-	size_t i =	ft_strlen(string);
-	printf("el numero de caracteres es: %ld\n", i);
-	return (0);
-}
-*/

@@ -6,13 +6,13 @@
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/28 21:36:22 by aneme             #+#    #+#             */
-/*   Updated: 2024/09/30 16:53:11 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/03 21:20:02 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 #include <stdlib.h>
-#include <string.h>
+#include <stdio.h>
 
 char *ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -23,7 +23,7 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
     if (*s == '\0')
         return NULL;
     
-    str_len = strlen(s);
+    str_len = ft_strlen(s);
     
     //if (start >= str_len)
       //  return strdup("");  // Devolvemos una cadena vacía
@@ -33,7 +33,7 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
         len = str_len - start;
 
     // Reservar memoria para la subcadena (len + 1 para el carácter nulo)
-    substr = (char *)malloc(sizeof(char) * (len + 1));
+    substr = (char *)malloc(sizeof(char) * (len - start + 1));
     if (substr == NULL)
         return NULL;  // Devolver NULL si falla la asignación de memoria
 
@@ -49,18 +49,12 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
 
     return substr;
 }
-
-int main() {
-    char *original = "Hello, world!";
-    char *sub;
-
-    // Extraer una subcadena desde el índice 7 con longitud máxima 5
-    sub = ft_substr(original, 7, 5);
-    
-    if (sub != NULL) {
-        printf("Subcadena: %s\n", sub);  // Debería imprimir "world"
-        free(sub);  // No olvidar liberar la memoria
-    }
-
-    return 0;
-}
+/*
+int main()
+{
+    char    *string = "zombie pelado";
+    char    *result = ft_substr(string, 3, 6);
+    printf("%s\n", result);
+    free(result);
+    return (0);
+}*/

@@ -1,34 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/17 18:39:47 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/02 01:28:45 by aneme            ###   ########.fr       */
+/*   Created: 2024/09/24 00:20:45 by aneme             #+#    #+#             */
+/*   Updated: 2024/10/02 01:40:26 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+int	ft_tolower(int c)
 {
-	int	i;
-
-	i = 0;
-	while (s[i] != 0)
+	if (c >= 'A' && c <= 'Z')
 	{
-		i++;
+		c = c + 32;
 	}
-	return (i);
+	return (c);
 }
-/*/
+
 int	main(void)
 {
-	char	string[] = {"four horsemen"};
-	size_t i =	ft_strlen(string);
-	printf("el numero de caracteres es: %ld\n", i);
+	char	c;
+
+	c = 'L';
+	printf("'%c' en minus es '%c'\n", c, ft_tolower(c));
+	c = 'h';
+	printf("'%c' en minus es '%c'\n", c, ft_tolower(c));
 	return (0);
 }
-*/

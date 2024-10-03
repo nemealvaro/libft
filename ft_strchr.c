@@ -1,34 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/17 18:39:47 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/02 01:28:45 by aneme            ###   ########.fr       */
+/*   Created: 2024/09/24 12:39:43 by aneme             #+#    #+#             */
+/*   Updated: 2024/10/02 01:40:26 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+char	*ft_strchr(const char *str, int c)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
-	while (s[i] != 0)
+	while (str[i] != '\0')
 	{
+		if (str[i] == (char)c)
+		{
+			return ((char *)&str[i]);
+		}
 		i++;
 	}
-	return (i);
+	if (c == '\0')
+	{
+		return ((char *)&str[i]);
+	}
+	return (NULL);
 }
-/*/
-int	main(void)
-{
-	char	string[] = {"four horsemen"};
-	size_t i =	ft_strlen(string);
-	printf("el numero de caracteres es: %ld\n", i);
-	return (0);
-}
-*/

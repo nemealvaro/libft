@@ -1,34 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/17 18:39:47 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/02 01:28:45 by aneme            ###   ########.fr       */
+/*   Created: 2024/09/23 19:49:00 by aneme             #+#    #+#             */
+/*   Updated: 2024/10/02 01:40:26 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	int	i;
+	unsigned char		*d;
+	const unsigned char	*s = (const unsigned char *)src;
+	size_t				i;
 
-	i = 0;
-	while (s[i] != 0)
+	d = (unsigned char *)dst;
+	if (d < s)
 	{
-		i++;
+		i = 0;
+		while (i < len)
+		{
+			d[i] = s[i];
+			i++;
+		}
 	}
-	return (i);
+	else if (d > s)
+	{
+		while (len > 0)
+		{
+			len--;
+			d[len] = s[len];
+		}
+	}
+	return (dst);
 }
-/*/
-int	main(void)
-{
-	char	string[] = {"four horsemen"};
-	size_t i =	ft_strlen(string);
-	printf("el numero de caracteres es: %ld\n", i);
-	return (0);
-}
-*/

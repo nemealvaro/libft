@@ -1,34 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/17 18:39:47 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/02 01:28:45 by aneme            ###   ########.fr       */
+/*   Created: 2024/09/21 20:05:01 by aneme             #+#    #+#             */
+/*   Updated: 2024/10/02 01:12:09 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+int	ft_toupper(int c)
 {
-	int	i;
-
-	i = 0;
-	while (s[i] != 0)
+	if (c >= 'a' && c <= 'z')
 	{
-		i++;
+		c = c - 32;
 	}
-	return (i);
+	return (c);
 }
-/*/
+
 int	main(void)
 {
-	char	string[] = {"four horsemen"};
-	size_t i =	ft_strlen(string);
-	printf("el numero de caracteres es: %ld\n", i);
+	char	c;
+
+	c = 'd';
+	printf("'%c' en mayus es '%c'\n", c, ft_toupper(c));
+	c = 'K';
+	printf("'%c' en mayus es '%c'\n", c, ft_toupper(c));
 	return (0);
 }
-*/
