@@ -6,11 +6,12 @@
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 20:09:31 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/02 01:40:26 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/08 18:16:17 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {

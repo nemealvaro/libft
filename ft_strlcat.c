@@ -6,11 +6,12 @@
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 23:33:02 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/02 01:40:26 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/08 18:24:28 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {

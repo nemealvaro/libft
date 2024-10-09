@@ -1,38 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/18 17:34:24 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/08 18:14:45 by aneme            ###   ########.fr       */
+/*   Created: 2024/10/07 13:04:35 by aneme             #+#    #+#             */
+/*   Updated: 2024/10/07 18:00:53 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+#include <unistd.h>
 
-int	ft_isascii(int c)
+void    ft_putstr_fd(char *s, int fd)
 {
-	if (c >= 0 && c <= 127)
-		return (1);
-	else
-		return (0);
+   size_t   i;
+
+   if (!s)
+        return (NULL);
+   i = 0;
+   while (s[i] != '\0')
+   {
+        write (fd, &s[i], 1);
+        i++;
+   }
+   return (0);
 }
 
-int	main(void)
+int main(void)
 {
-	char	c;
-
-	c = '-';
-	if (ft_isascii(c))
-	{
-		printf("%c es un caracter ascii.\n", c);
-	}
-	else
-	{
-		printf("%c no es un caracter ascii.\n", c);
-	}
-	return (0);
+    char    str[] = "hello world";
+    
 }

@@ -1,38 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/18 17:34:24 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/08 18:14:45 by aneme            ###   ########.fr       */
+/*   Created: 2024/10/07 18:02:34 by aneme             #+#    #+#             */
+/*   Updated: 2024/10/07 18:07:14 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+#include <unistd.h>
 
-int	ft_isascii(int c)
+void    ft_putendl_fd(char *s, int fd)
 {
-	if (c >= 0 && c <= 127)
-		return (1);
-	else
-		return (0);
-}
+    size_t  i;
 
-int	main(void)
-{
-	char	c;
+    if (!s)
+        return NULL
 
-	c = '-';
-	if (ft_isascii(c))
-	{
-		printf("%c es un caracter ascii.\n", c);
-	}
-	else
-	{
-		printf("%c no es un caracter ascii.\n", c);
-	}
-	return (0);
+    i = 0;
+    while (s[i] != '\0')
+    {
+        write(fd, &s, 1);
+        i++;
+    }
+    write (fd, '\n', 1);
 }

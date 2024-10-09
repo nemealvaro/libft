@@ -6,22 +6,19 @@
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 20:50:34 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/02 01:40:26 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/08 18:15:40 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
-	{
 		return (1);
-	}
 	else
-	{
 		return (0);
-	}
 }
 
 int	main(void)

@@ -6,11 +6,12 @@
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 17:52:01 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/02 01:43:12 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/08 18:16:44 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 void	*ft_memset(void *dest, int value, size_t num)
 {

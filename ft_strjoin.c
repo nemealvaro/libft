@@ -6,7 +6,7 @@
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 18:48:18 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/02 21:26:00 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/08 18:22:56 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ char    *ft_strjoin(char const *s1, char const *s2)
     return (join_str);
 }
 
-#include <stdio.h>
 int main (void)
 {
         printf("%s\n", ft_strjoin("hola,", " aleman!"));
