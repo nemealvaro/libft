@@ -6,7 +6,7 @@
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:25:17 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/03 21:30:03 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/09 18:33:28 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ char    *ft_strtrim(char const *s1, char const *set)
     trimstr = ft_substr(s1, start, end - start);
 	return (trimstr);
 }
-
+/*
 int main()
 {
 	char s1[] = "  ffHello Worldff  ";
@@ -53,4 +53,4 @@ int main()
 	printf("Cadena recortada: '%s'\n", result);
 	free(result);
 	return 0;
-}
+}*/

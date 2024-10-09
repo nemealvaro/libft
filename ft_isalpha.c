@@ -6,7 +6,7 @@
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 19:21:52 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/08 18:14:10 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/09 18:30:51 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_isalpha(int c)
 	else
 		return (0);
 }
-
+/*
 int	main(void)
 {
 	char	c;
@@ -37,4 +37,4 @@ int	main(void)
 		printf("%c no es una letra.\n", c);
 	}
 	return (0);
-}
+}*/

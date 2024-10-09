@@ -6,7 +6,7 @@
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 17:05:31 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/08 18:13:28 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/09 18:30:44 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
-
+/*
 int	main(void)
 {
 	int	c;
@@ -35,4 +35,4 @@ int	main(void)
 		printf("%c no es alfanumerico.\n", c);
 	}
 	return (0);
-}
+}*/

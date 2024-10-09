@@ -6,7 +6,7 @@
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:27:01 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/09 14:27:04 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/09 18:33:12 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ char    *ft_strmapi(char const *s, char(*f)(unsigned int, char))
     str[i] = '\0';
     return (str);
 }
-
+/*
 int main(void)
 {
     char string[] = "peace sells";
@@ -54,4 +54,4 @@ int main(void)
         free(result);
     }
     return (0);
-}
+}*/

@@ -6,7 +6,7 @@
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 20:42:41 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/08 18:13:07 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/09 18:46:03 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-
+/*
 int	main(void)
 {
 	char	buffer[10];
@@ -46,5 +46,4 @@ int	main(void)
 		printf("%d", buffer[in]);
 		in++;
 	}
-	return (0);
-}
+	r*/

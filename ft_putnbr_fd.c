@@ -6,7 +6,7 @@
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 15:45:11 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/09 14:28:59 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/09 18:32:18 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void    ft_putnbr_fd(int n, int fd)
     c = n % 10 + '0';
     write(fd, &c, 1);
 }
-
+/*
 int main(void)
 {
 
@@ -57,4 +57,4 @@ int main(void)
     close(fd);
 
     return (0);
-}
+}*/

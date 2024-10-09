@@ -6,7 +6,7 @@
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 19:46:57 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/08 18:15:19 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/09 18:31:09 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_isdigit(char c)
 	else
 		return (0);
 }
-
+/*
 int	main(void)
 {
 	char	c;
@@ -35,4 +35,4 @@ int	main(void)
 		printf("%c no es un numero.\n", c);
 	}
 	return (0);
-}
+}*/

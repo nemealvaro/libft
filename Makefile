@@ -6,7 +6,7 @@
 #    By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/01 19:50:19 by aneme             #+#    #+#              #
-#    Updated: 2024/10/03 21:18:43 by aneme            ###   ########.fr        #
+#    Updated: 2024/10/09 18:46:00 by aneme            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,13 +45,21 @@ SRCS = ft_atoi.c ft_bzero.c \
        ft_tolower.c \
        ft_toupper.c \
        ft_substr.c \
+       ft_striteri.c \
+       ft_strmapi.c \
+       ft_strjoin.c \
+       ft_itoa.c \
+       ft_strtrim.c \
+       ft_putchar_fd.c \
+       ft_putendl_fd.c \
+       ft_putnbr_fd.c \
+       ft_split.c \
 
-
-BNS_SRCS = 
+#BNS_SRCS = 
 
 OBJS = $(SRCS:.c=.o)
 
-BNS_OBJS = $(BNS_SRCS:.c=.o)
+#BNS_OBJS = $(BNS_SRCS:.c=.o)
 
 FLAGS = -Wall -Werror -Wextra
 
@@ -65,9 +73,9 @@ $(NAME): $(OBJS)
 	@echo "$(BLUE)Compiling... $(YELLOW) $< $(RESET)" 
 	@$(CC) $(FLAGS) -c $< -o $@ 
 
-bonus: $(NAME)
-	@gcc $(FLAGS) -c $(BNS_SRCS) -I ./
-	@ar rc $(NAME) $(OBJS)
+#bonus: $(NAME)
+#	@gcc $(FLAGS) -c $(BNS_SRCS) -I ./
+#	@ar rc $(NAME) $(OBJS)
 
 clean:
 	rm -f $(OBJS) $(BNS_OBJS)

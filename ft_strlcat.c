@@ -6,7 +6,7 @@
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 23:33:02 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/08 18:24:28 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/09 18:32:57 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[dstlen + i] = '\0';
 	return (dstlen + srclen);
 }
-
+/*
 int	main(void)
 {
 	char	buffer[15] = "Hello";
@@ -47,4 +47,4 @@ int	main(void)
 	printf("Cadena concatenada: %s\n", buffer);
 	printf("Longitud total de la cadena resultante: %zu\n", result);
 	return (0);
-}
+}*/

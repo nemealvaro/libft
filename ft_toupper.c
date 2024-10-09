@@ -6,7 +6,7 @@
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 20:05:01 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/09 14:25:32 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/09 18:33:48 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_toupper(int c)
 	}
 	return (c);
 }
-
+/*
 int	main(void)
 {
 	char	c;
@@ -31,4 +31,4 @@ int	main(void)
 	c = 'K';
 	printf("'%c' en mayus es '%c'\n", c, ft_toupper(c));
 	return (0);
-}
+}*/

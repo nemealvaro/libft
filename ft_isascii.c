@@ -6,7 +6,7 @@
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 17:34:24 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/08 18:14:45 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/09 18:31:02 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
-
+/*
 int	main(void)
 {
 	char	c;
@@ -35,4 +35,4 @@ int	main(void)
 		printf("%c no es un caracter ascii.\n", c);
 	}
 	return (0);
-}
+}*/

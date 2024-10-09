@@ -6,7 +6,7 @@
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 00:20:45 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/09 14:25:20 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/09 18:33:39 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_tolower(int c)
 	}
 	return (c);
 }
-
+/*
 int	main(void)
 {
 	char	c;
@@ -31,4 +31,4 @@ int	main(void)
 	c = 'h';
 	printf("'%c' en minus es '%c'\n", c, ft_tolower(c));
 	return (0);
-}
+}*/
