@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
+/*   By: aneme <aneme@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 09:41:58 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/09 19:11:44 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/09 21:42:15 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,16 @@ char	*ft_strrchr(const char *str, int c)
 {
 	int	len;
 
-	if (!str || !c)
-		return (NULL);	
+	if (!str)
+		return(NULL);	
 	len = ft_strlen(str);
 	while (len >= 0)
 	{
-		if (str[len] == c)
+		if (str[len] == (char)c)
 			return ((char *)str + len);
 		len--;
 	}
-	return ("\0");
+	return (NULL);
 }
 /*
 int	main(void)

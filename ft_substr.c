@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
+/*   By: aneme <aneme@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/28 21:36:22 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/03 21:20:02 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/09 21:42:16 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,33 +20,23 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
     size_t i;
     size_t str_len;
     
-    if (*s == '\0')
+    if (!s)
         return NULL;
-    
     str_len = ft_strlen(s);
-    
-    //if (start >= str_len)
-      //  return strdup("");  // Devolvemos una cadena vacía
-
-    // Ajustar 'len' si es necesario
+    if (start >= str_len)
+      return ft_strdup("");
     if (len > str_len - start)
         len = str_len - start;
-
-    // Reservar memoria para la subcadena (len + 1 para el carácter nulo)
-    substr = (char *)malloc(sizeof(char) * (len - start + 1));
+    substr = (char *)malloc(sizeof(char) * (len + 1));
     if (substr == NULL)
-        return NULL;  // Devolver NULL si falla la asignación de memoria
-
-    // Copiar los caracteres desde 's' a la nueva subcadena
+        return NULL;
     i = 0;
-    while (i < len) {
+    while (i < len)
+    {
         substr[i] = s[start + i];
         i++;
     }
-
-    // Asegurarnos de que la subcadena esté terminada con un carácter nulo
     substr[i] = '\0';
-
     return substr;
 }
 /*

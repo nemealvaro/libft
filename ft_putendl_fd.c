@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
+/*   By: aneme <aneme@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 18:02:34 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/09 19:03:58 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/09 21:42:03 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,10 @@ void    ft_putendl_fd(char *s, int fd)
 
     if (!s)
         return;
-
     i = 0;
     while (s[i] != '\0')
     {
-        write(fd, &s, 1);
+        write(fd, &s[i], 1);
         i++;
     }
     write (fd, "\n", 1);

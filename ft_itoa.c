@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
+/*   By: aneme <aneme@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 21:31:24 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/09 19:03:12 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/09 21:41:58 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-static	int	count_char(int num)
+static int	count_char(int num)
 {
 	int	count;
 
@@ -23,7 +23,7 @@ static	int	count_char(int num)
 	{
 		if (num < 0)
 		{
-			num = num *(-1);
+			num = num * (-1);
 			count++;
 		}
 		while (num != 0)
@@ -39,7 +39,7 @@ static	int	count_char(int num)
 
 char	*ft_itoa(int n)
 {
-	int 		len;
+	int			len;
 	char		*str;
 	long int	nbr;
 
