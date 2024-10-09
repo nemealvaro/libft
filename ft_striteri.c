@@ -6,20 +6,20 @@
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:48:35 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/09 18:32:43 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/09 19:02:18 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-static void     ft_tooupper(unsigned int i, char *c)
+/*tatic void     ft_tooupper(unsigned int i, char *c)
 {
     (void)i;
     if (*c >= 'a' && *c <= 'z')
 		*c = *c - 32;
 	return;
-}
+}*/
 
 void    ft_striteri(char *s, void (*f)(unsigned int, char*))
 {

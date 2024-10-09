@@ -6,7 +6,7 @@
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:27:01 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/09 18:33:12 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/09 19:02:42 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-static char     ft_toouper(unsigned int i, char c)
+/*static char     ft_toouper(unsigned int i, char c)
 {
     (void)i;
     if (c >= 'a' && c <= 'z')
 		return (c - 32);
 	return (c);
-}
+}*/
 
 char    *ft_strmapi(char const *s, char(*f)(unsigned int, char))
 {

@@ -6,7 +6,7 @@
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 18:02:34 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/07 18:07:14 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/09 19:03:58 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void    ft_putendl_fd(char *s, int fd)
     size_t  i;
 
     if (!s)
-        return NULL
+        return;
 
     i = 0;
     while (s[i] != '\0')
@@ -26,5 +26,5 @@ void    ft_putendl_fd(char *s, int fd)
         write(fd, &s, 1);
         i++;
     }
-    write (fd, '\n', 1);
+    write (fd, "\n", 1);
 }

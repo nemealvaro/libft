@@ -6,13 +6,13 @@
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 21:31:24 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/06 17:08:06 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/09 19:03:12 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
-#include <stlib.h>
+#include <stdlib.h>
 
 static	int	count_char(int num)
 {

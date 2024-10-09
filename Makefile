@@ -6,7 +6,7 @@
 #    By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/01 19:50:19 by aneme             #+#    #+#              #
-#    Updated: 2024/10/09 18:46:00 by aneme            ###   ########.fr        #
+#    Updated: 2024/10/09 19:08:06 by aneme            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,7 +53,7 @@ SRCS = ft_atoi.c ft_bzero.c \
        ft_putchar_fd.c \
        ft_putendl_fd.c \
        ft_putnbr_fd.c \
-       ft_split.c \
+#       ft_split.c \
 
 #BNS_SRCS = 
 
@@ -74,7 +74,7 @@ $(NAME): $(OBJS)
 	@$(CC) $(FLAGS) -c $< -o $@ 
 
 #bonus: $(NAME)
-#	@gcc $(FLAGS) -c $(BNS_SRCS) -I ./
+#	@cc $(FLAGS) -c $(BNS_SRCS) -I ./
 #	@ar rc $(NAME) $(OBJS)
 
 clean:

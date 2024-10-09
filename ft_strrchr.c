@@ -6,7 +6,7 @@
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 09:41:58 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/09 14:26:06 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/09 19:11:44 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_strrchr(const char *str, int c)
 			return ((char *)str + len);
 		len--;
 	}
-	return (NULL);
+	return ("\0");
 }
 /*
 int	main(void)
