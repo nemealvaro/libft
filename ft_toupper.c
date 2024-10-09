@@ -6,11 +6,12 @@
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 20:05:01 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/02 01:12:09 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/09 14:25:32 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 int	ft_toupper(int c)
 {

@@ -6,12 +6,13 @@
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:27:01 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/07 17:26:40 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/09 14:27:04 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 static char     ft_toouper(unsigned int i, char c)
 {
