@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: aneme <aneme@student.42.fr>                +#+  +:+       +#+         #
+#    By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/01 19:50:19 by aneme             #+#    #+#              #
-#    Updated: 2024/10/09 21:42:20 by aneme            ###   ########.fr        #
+#    Updated: 2024/10/10 18:24:56 by aneme            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,7 +54,7 @@ SRCS = ft_atoi.c ft_bzero.c \
        ft_putendl_fd.c \
        ft_putnbr_fd.c \
        ft_putstr_fd.c \
-#       ft_split.c \
+       ft_split.c \
 
 #BNS_SRCS = 
 
