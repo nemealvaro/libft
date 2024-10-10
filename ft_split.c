@@ -6,7 +6,7 @@
 /*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 15:46:56 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/10 18:22:00 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/10 18:27:20 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,6 +82,7 @@ char **ft_split(char const *s, char c)
 	split[j] = NULL;
 	return (split);
 }
+/*
 int main(int argc, char **argv)
 {
     char **result;
@@ -118,4 +119,4 @@ int main(int argc, char **argv)
     free_split(result);
 
     return (0);
-}
+}*/
