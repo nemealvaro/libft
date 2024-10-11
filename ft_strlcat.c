@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aneme <aneme@student.42.fr>                +#+  +:+       +#+        */
+/*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 23:33:02 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/09 21:42:11 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/11 12:04:31 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 
 	dstlen = ft_strlen(dst);
 	srclen = ft_strlen(src);
-
 	if (dstlen >= dstsize)
 	{
 		return (dstsize + srclen);

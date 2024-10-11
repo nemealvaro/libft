@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aneme <aneme@student.42.fr>                +#+  +:+       +#+        */
+/*   By: aneme <aneme@student.42madrid.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 16:11:52 by aneme             #+#    #+#             */
-/*   Updated: 2024/10/09 21:41:51 by aneme            ###   ########.fr       */
+/*   Updated: 2024/10/11 12:16:04 by aneme            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*ptr;
-	
+
 	if (!count || !size)
 		return (NULL);
 	ptr = malloc(count * size);
